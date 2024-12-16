@@ -191,8 +191,8 @@ def register():
                 conn.commit()
             return redirect(url_for("login"))
         except sqlite3.IntegrityError:
-            return render_template("register.html", error="Username already exists")
-    return render_template("register.html")
+            return render_template("Register.html", error="Username already exists")
+    return render_template("Register.html")
 
 @app.route("/chat", methods=["GET"])
 def chat():
