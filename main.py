@@ -58,7 +58,7 @@ def get_current_time():
     est_offset = timedelta(hours=-5)
     est_timezone = timezone(est_offset)
     now = datetime.now(est_timezone)
-   return now.strftime("%Y-%m-%d %I:%M %p")
+    return now.strftime("%Y-%m-%d %I:%M %p")
 
 time_tool = StructuredTool.from_function(
     func=get_current_time,
