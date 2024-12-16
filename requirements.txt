@@ -1,0 +1,10 @@
+Flask==3.1.0
+flask-cors
+flask-bcrypt
+Flask-SQLAlchemy
+werkzeug
+langchain==0.3.12
+langchain-openai
+wikipedia
+python-dotenv
+flask-session

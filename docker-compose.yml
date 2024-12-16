@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  langchain-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: langchain_agent
+    ports:
+      - "8125:8125" 
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
