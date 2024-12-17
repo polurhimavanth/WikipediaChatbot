@@ -164,7 +164,7 @@
         .then(response => response.json())
         .then(data => {
           const currentTimeElement = document.getElementById("current-time");
-          currentTimeElement.textContent = `Current time: ${data.current_time}`;
+          currentTimeElement.textContent = `Current Date time: ${data.current_time}`;
         })
         .catch(error => {
           console.error("Error fetching time:", error);
